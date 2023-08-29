@@ -1,4 +1,4 @@
-package com.macv.messages_app;
+package com.macv.messagesApp;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
