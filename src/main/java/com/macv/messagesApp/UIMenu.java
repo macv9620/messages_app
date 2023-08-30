@@ -6,7 +6,8 @@ public class UIMenu {
     public static void showMenu(){
         int response = 0;
         do {
-            System.out.println("Welcome to MessageApp, what do you wan to to do?");
+            System.out.println("-------------------------------");
+            System.out.println("MessageApp: what do you wan to to do?");
             System.out.println("1. Create a message");
             System.out.println("2. Show created messages");
             System.out.println("3. Edit message");
@@ -26,10 +27,12 @@ public class UIMenu {
                     response = 5;
                     break;
                 case 3:
-                    System.out.println("Llamar servicio editar mensajes");
+                    MessageService.updateMessage();
+                    response = 5;
                     break;
                 case 4:
-                    System.out.println("Llamar servicio eliminar mensaje");
+                    MessageService.deleteMessage();
+                    response = 5;
                     break;
                 case 5:
                     System.out.println("Saliendo...");
